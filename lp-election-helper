@@ -98,7 +98,7 @@ def main():
     print "#### Members with no public email address or GPG key ####"
     print
     for missed_account in missed_accounts:
-        print missed_account
+        print missed_account.encode('utf-8')
 
 if __name__ == '__main__':
     try:
